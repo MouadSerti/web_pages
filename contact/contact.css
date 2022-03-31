@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family:'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    background-color: #fff;
+    color: #000;
+}
+nav ul li{
+    margin: 0 10px ;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+nav span i{
+    color: #000;
+    font-size: 25px;
+}
+
+nav input[type="search"]{
+    width: 300px;
+    height: 50px;
+    display: none;
+    outline: none;
+    margin: 0 auto;   
+}
+input[type="button"]{
+    background-color: #ff5733;
+    color: #fff;
+}
+@media screen and (max-width:991px) {
+    nav div.collapse{
+        text-align: center;
+        line-height: 50px;
+    }
+    
+}
+/* fin nav */
+
+form input[type="text"] {
+    width: 500px;
+    height: 50px;
+    margin: 30px 10px 0 0;
+}
+
+ /* debut footer */
+ footer section a i{
+    color: #ff5733;
+} 
+/* fin footer */
+.dark-mode{
+    background-color: #161616;
+    color: #fff;
+}

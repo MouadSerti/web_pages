@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Sportif</title>
+    <link rel="stylesheet" href="Acceuil.css">
+    <script src="https://kit.fontawesome.com/d805fe0dad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body > 
+    <nav class="navbar navbar-expand-lg fixed-top d-flex">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./image/logo.png" width="90" height="90" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item list-group "><a  class="text-reset nav-link" href="">Acceuil</a></li>
+                    <li class="nav-item list-group"><a  class="text-reset nav-link" href="../inscription/inscr.html">abonnement</a></li>
+                    <li class="nav-item list-group"><a  class="text-reset nav-link"href="../galerie/galerie.html">galerie</a></li>
+                    <li class="nav-item list-group"><a  class="text-reset nav-link"href="../contact/contact.html">contacter</a></li>
+                    <li class="nav-item list-group "><input id="search-bar" type="search" placeholder="Search.."class="nav-link  "></li>
+                    <li class="nav-item list-group "><i onclick="barsearch()" id="search-icon" class=" text-reset nav-link fas fa-search "></i></li>
+                    <li class="nav-item list-group"><i  onclick="darkmode()" class="bi bi-brightness-high text-reset nav-link "></i></li>
+                </ul>
+                <input class="btn" type="button" onclick="connecter()" value="Se Connecter">   
+          </div> 
+        </div>
+    </nav>      
+  
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/img2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/img3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/img4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon " aria-hidden="true"></span>
+        </button>
+      </div>
+      
+    <div class="container " data-aos="fade-up">
+        <h3 style=" text-align: center; margin-top: 100px;">Découvrez notre concept <br> & <b style="color:#ff5733"> partagez notre passion</b> </h1>
+        <div class="row">
+            <div id="concept" class="col-sm-12 col-md-6 col-lg-3 article">
+                <img src="./image/small5.jpg" class="image"  width="250" height="450"alt="" >
+                <div class="middle">
+                    <div class="text">Concept</div>
+                   
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 article">
+                <img src="./image/small6.jpg" class="image"  width="250" height="450"alt="" >
+                <div class="middle">
+                    <div class="text">activites</div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 article">
+                <img src="./image/small7.jpg" class="image"  width="250" height="450"alt="" >
+                <div class="middle">
+                    <div class="text">Clubs</div>
+                </div>
+            
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 article">
+                <img src="./image/small8.jpg" class="image"  width="250" height="450"alt="" >
+                <div class="middle">
+                    <div class="text">Tarifs</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container " data-aos="fade-up">
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <h1>Formule de Lorentz</h3>
+                <p> La formule de Lorentz est un de ces outils. <br> Valable pour un adulte âgé de 18 à 65 ans, <br> elle n’est pas adaptée pour les femmes enceintes <br> ou les sportifs.</p>
+            </div>
+            <form action="" class="col-sm-12 col-lg-4">
+                    <label for="radio" >Male</label>
+                    <input  class="form-radio-input lbl mb-3" id="male" name="sexe" type="radio" >
+                    <label for="radio">Female</label>
+                    <input class="form-check-input  mb-3"id="female" name="sexe" type="radio">
+                    <input class="form-control mb-3" id="age" type="number" placeholder="age">
+                    <input  class="form-control mb-3" id="Taill" type="number" placeholder="Taille(CM)">
+                    <input  class="form-control mb-3" id="poids" type="number" placeholder="poids(KG)">
+                    <label for=""id="result" ></label>
+                    <input  class="form-control" type="button" onclick=" calculer()" value="calculer">   
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="container fd">
+        <div class="row">
+            <img class="col-lg-6 " data-aos="fade-right" src="./image/small1.jpg" width="400" height="400" alt="">
+            <div class="col-lg-6 p-5" data-aos="fade-left">
+                <h4>Concept</h4>
+                <p>Sélectionnés pour leur expertise sportive mais aussi pour leurs grandes qualités de sportifs de haut niveau, nos coachs se caractérisent par leur variété de profils et partagent tous la même philosophie de la société : disponibilité, respect d’autrui et la compétence. </p>
+            </div>
+        </div>
+        <div  class="row ">
+        <img class="col-lg-6" data-aos="fade-left" src="./image/small2.jpg" width="400" height="400" alt="">
+        <div class="col-lg-6 p-5" data-aos="fade-right">
+                <h4>activites</h4>
+                <p>Sélectionnés pour leur expertise sportive mais aussi pour leurs grandes qualités de sportifs de haut niveau, nos coachs se caractérisent par leur variété de profils et partagent tous la même philosophie de la société : disponibilité, respect d’autrui et la compétence. </p>
+            </div>
+        </div>
+        <div class="row">
+            <img class="col-lg-6" data-aos="fade-right" src="./image/small3.jpg" width="400" height="400" alt="">
+            <div class="col-lg-6 p-5" data-aos="fade-left">
+                <h4>Clubs</h4>
+                <p>Sélectionnés pour leur expertise sportive mais aussi pour leurs grandes qualités de sportifs de haut niveau, nos coachs se caractérisent par leur variété de profils et partagent tous la même philosophie de la société : disponibilité, respect d’autrui et la compétence. </p>
+            </div>
+        </div>
+        <div  class="row">
+            <img class="col-lg-6" data-aos="fade-left" src="./image/small4.jpg" width="400" height="400" alt="">
+            <div class="col-lg-6 p-5" data-aos="fade-right">
+                <h4>Tarifs</h4>
+                <p>Sélectionnés pour leur expertise sportive mais aussi pour leurs grandes qualités de sportifs de haut niveau, nos coachs se caractérisent par leur variété de profils et partagent tous la même philosophie de la société : disponibilité, respect d’autrui et la compétence. </p>
+            </div>
+        </div>
+       
+    </div>
+    
+     <div class="container map" data-aos="fade-up">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.856400456324!2d-6.888636285364111!3d33.97053022948044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76d2f98c0576d%3A0xa854b9d82563a76!2sINSTITUT%20DE%20TECHNOLOGIE%20APPLIQUEE%20YACOUB%20EL%20MANSOUR%20RABAT!5e0!3m2!1sfr!2sma!4v1637658383671!5m2!1sfr!2sma" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            <h1> <mark >fitness club </mark> y'a plus 10 <mark>club</mark>  ou Maroc </h1>
+     </div> 
+
+    <footer >
+        <div class=" container text-center text-lg-start mt-5 ">
+            <div class="row ">
+                <div class="col-md-4 col-12 ">
+                    <ul class="list-group">
+                        <li class="list-group"> <h3 class="h3">Liens utiles</h3></li>
+                        <li class="list-group"><a class=" mb-3 mt-3 text-reset nav-link" href="">accuile</a></li>
+                        <li  class="list-group"><a class="mb-3 text-reset nav-link" href="../inscription/inscr.html">abonnement</a></li>
+                        <!-- <li  class="list-group"><a class="mb-3 text-reset nav-link" href=".">service</a></li> -->
+                        <li  class="list-group"><a class="mb-3 text-reset nav-link" href="../galerie/galerie.html">galerie</a></li>
+                        <li  class="list-group"><a class="mb-3 text-reset nav-link" href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 " >
+                    <ul class="list-group">
+                    <li class="list-group"><h3 class="h3">A propre</h3></li> 
+                        <li class="list-group"><a class="mb-3 mt-3 text-reset nav-link" href="#">prop1</a></li>
+                        <li class="list-group"><a  class="mb-3 text-reset nav-link"href="#">prop2</a></li>
+                        <li class="list-group"><a class="mb-3 text-reset nav-link"href="#">prop3</a></li>
+                        <li class="list-group"><a class="mb-3 text-reset nav-link"href="#">prop4</a></li>
+                        <!-- <li class="list-group"><a class="mb-3 text-reset nav-link"href="#">prop5</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <div >
+                        <h3 class="h3"> Horaires d'ouverture </h3>            
+                        Lundi – Vendredi : <br>
+                        07:00 – 22:00
+                        <br>
+                        <br>
+                        Samedi :<br>
+                        09:00 – 20:00
+                        <br>
+                        <br>
+                        Dimanche :<br>
+                        09:00 – 18:00 
+                    </div> 
+                    <div >
+                        <h3 class="h3">trouvez-nous sur</h3>
+                        <a class="text-reset" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-reset" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="text-reset" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="text-reset" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>   
+                    </div>
+                </div>
+                <div class="  p-3 text-center ">
+                    © 2022 Copyright: Mouad Serti
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+</body>
+
+   <script>
+
+       function calculer(){
+            
+            var male=document.getElementById('male').checked;
+            var female=document.getElementById('female').checked;
+            var taill=document.getElementById('Taill').value;
+            var erruer;
+            var res;
+          
+            if(male){
+                 if(taill ==''){ 
+                erruer="le champ est vide !voulliez entre votre taille en 'CM'"
+                document.getElementById('result').innerHTML=erruer;
+                }else{
+                    res=taill-100-(taill-150)/4;
+                    document.getElementById('result').innerHTML="Poids idéal d’un homme (en Kg) : "+res;                    
+                } 
+                              
+            }else if(female){       
+                if(taill ==''){ 
+                erruer="le champ est vide !voulliez entre votre taille en 'CM'"
+                document.getElementById('result').innerHTML=erruer;
+                }else{
+                    res=taill-100-(taill-150)/2.5;
+                    document.getElementById('result').innerHTML="Poids idéal d’une femme (en Kg) : "+res;
+                }        
+            }else{
+                erruer="Choisissez vouz votre sexe !";
+                document.getElementById('result').innerHTML=erruer;
+            }
+           
+         } 
+        function darkmode() {
+            var Element1=document.body;
+            Element1.classList.toggle("dark-mode");   
+            var Element2=document.querySelector("footer");
+            Element2.classList.toggle("dark-mode");
+            var Element3=document.querySelector("nav");
+            Element3.classList.toggle("dark-mode");   
+            var Element4 =document.querySelector("i");
+            Element4.classList.toggle("dark-mode")            
+        }
+        function barsearch(){
+            var Element1=document.getElementById("search-bar");
+            var Element2=document.getElementById("search-icon");
+            if(Element2.click){
+                Element1.style.display="block";
+                Element2.style.display="none";
+            }}
+        function connecter(){
+            document.location.href="../authentification/auth.html";
+        }
+</script>
+
+</html>

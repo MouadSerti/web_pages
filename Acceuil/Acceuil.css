@@ -1,0 +1,120 @@
+
+body{
+    color: #000;
+    background: #FFF;
+    padding: 0px;
+    margin: 0px;
+    font-family:'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* debut de nav */
+nav{
+    background-color: #fff;
+    color: #000;
+}
+nav ul li{
+    margin: 0 10px ;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+nav span i{
+    color: #000;
+    font-size: 25px;
+}
+
+nav input[type="search"]{
+    width: 300px;
+    height: 50px;
+    display: none;
+    outline: none;
+    margin: 0 auto;   
+}
+input[type="button"]{
+    background-color: #ff5733;
+    color: #fff;
+}
+@media screen and (max-width:991px) {
+    nav div.collapse{
+        text-align: center;
+        line-height: 50px;
+    }
+    
+}
+ /* fin  nav */
+.container{
+    margin: 100px 0;
+
+}
+.map{
+    text-align: center;
+}
+.map h1 mark{
+    color:#ff5733;
+    background-color: transparent;
+}
+.map h1{
+    padding: 10px 0 100px 0;   
+}
+.article {
+position: relative;
+width: 50%;
+}
+.image {
+opacity: 1;
+display: block;
+width: 100%;
+height: auto;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+.middle {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+cursor: pointer;
+}
+.article:hover .image {
+opacity: 0.3;
+transform: scale(1.1);
+}
+.article:hover .middle {
+opacity: 1;
+}
+.text {
+background-color: #ff5733;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
+}
+/* debut footer */
+ 
+footer{
+    background-color: #fff;
+    color: #000;
+    display: flex;
+}
+
+ footer h1,h3{
+    color: #ff5733;
+}
+ /* fin footer */
+.dark-mode{
+    background-color: #161616;
+    color: #fff;
+}
+
+a:hover{
+    text-decoration: underline ;
+    color: #ff5733;
+}
+
+.fd .row:nth-child(even) img{
+    order: 2;
+  }
+ 

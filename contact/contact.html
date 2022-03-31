@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Club Sportif</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/d805fe0dad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top d-flex">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="logo.png" width="90" height="90" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item list-group "><a  class="text-reset nav-link" href="../Acceuil/Acceuil.html">Acceuil</a></li>
+                    <li class="nav-item list-group"><a  class="text-reset nav-link" href="../inscription/inscr.html">abonnement</a></li>
+                    <li class="nav-item list-group"><a  class="text-reset nav-link"href="../galerie/galerie.html">galerie</a></li>
+                    <li class="nav-item list-group"><a  class="text-reset nav-link"href="../contact/contact.html">contacter</a></li>
+                    <li class="nav-item list-group "><input id="search-bar" type="search" placeholder="Search.."class="nav-link  "></li>
+                    <li class="nav-item list-group "><i onclick="barsearch()" id="search-icon" class=" text-reset nav-link fas fa-search "></i></li>
+                    <li class="nav-item list-group"><i  onclick="darkmode()" class="bi bi-brightness-high text-reset nav-link "></i></li>
+                </ul>
+                <input class="btn" type="button" onclick=" document.location.href='../authentification/auth.html';" value="Se Connecter">   
+          </div> 
+        </div>
+    </nav>   
+   
+   <div class="container mt-5">
+       <div class="row">
+            <div class="col-12 col-lg-6">
+                <h1 style="padding: 150px 0 0 100px;" >Contactez-nous <b style="color: #ff5733; ">!</b></h1>
+                <h2>REMPLISSEZ LE FORMULAIRE </h2>
+                <h3> Fitness Club est à l’écoute, nous serions très ravis d’être en contact avec vous. </h3>
+            </div>
+            <div class="col-12 col-lg-6 mt-5">
+                <img src="pngwing.com.png" width="500px" height="500px" alt="">
+            </div>
+            <form action=""class="col-12 mb-5" >             
+                <input class="form-control" type="text" placeholder="Nom d'utilisateur ">
+                <input class="form-control" type="text" placeholder="Email or Téléphone">
+                <input class="form-control" rows="5" type="text" placeholder="Message">
+                <p id="erreur" style="color:red;"></p>
+                <input type="submit" class="btn mt-3"value="Envoyer">
+            </form>
+       </div>
+   </div>
+   
+   <footer class="text-center " >
+    <div class="container pt-4">
+      <section class="mb-4">
+        <a class="btn btn-link  btn-lg m-1" href="#!" ><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-link  btn-lg  m-1" href="#!"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-link  btn-lg  m-1" href="#!"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-link  btn-lg m-1" href="#!"><i class="fab fa-linkedin"></i></a>
+        <a class="btn btn-link  btn-lg  m-1" href="#!"><i class="fab fa-github"></i></a>
+      </section>
+    </div>
+    <div class="text-center p-3" >
+      © 2020 Copyright: Mouad Serti
+    </div>
+</footer>
+ 
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+  function darkmode() {
+       var Element1=document.body;
+       Element1.classList.toggle("dark-mode");   
+       var Element2=document.querySelector("footer");
+       Element2.classList.toggle("dark-mode");
+       var Element3=document.querySelector("nav");
+       Element3.classList.toggle("dark-mode");   
+       var Element4 =document.querySelector("i");
+       Element4.classList.toggle("dark-mode")            
+   }
+   function barsearch(){
+       var Element1=document.getElementById("search-bar");
+       var Element2=document.getElementById("search-icon");
+       if(Element2.click){
+           Element1.style.display="block";
+           Element2.style.display="none";
+       }}
+
+    document.querySelector('form').addEventListener("submit", function(e){
+    var erreur;
+    var inputs=document.querySelectorAll('form input');
+    for(var i=0; i < inputs.length; i++){
+        if(!inputs[i].value){
+            erreur="le champ est vide! voulliez vous renseigner svp !";
+            break;
+        }
+    }
+    if(erreur){
+        e.preventDefault();
+        document.getElementById('erreur').innerHTML=erreur;
+    }else{
+        document.getElementById('erreur').innerHTML="";    
+         alert('formulair envoye '); 
+    }
+
+})
+</script>
+</html>

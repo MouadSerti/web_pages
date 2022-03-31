@@ -1,0 +1,76 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+                                  /* debut login */
+form{
+    margin: 200px auto;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 30px;
+}
+form input[type=text],[type=password]{
+    margin: 15px auto;
+    width: 300px;   
+    height: 50px;
+    outline: none;
+}
+
+input[type="submit"]{
+    background-color: #ff5733;
+    color: #fff;
+    margin-top: 15px;
+} 
+
+                        /* fin login */
+                        /* debut footer */
+nav{
+    background-color: #fff;
+    color: #000;
+}
+nav ul li{
+    margin: 0 10px ;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+nav span i{
+    color: #000;
+    font-size: 25px;
+    /* flex: 1;     */
+}
+
+nav input[type="search"]{
+    width: 300px;
+    height: 50px;
+    display: none;
+    outline: none;
+    margin: 0 auto;   
+}
+nav input[type="button"]{
+    background-color: #ff5733;
+    color: #fff;
+}
+@media screen and (max-width:991px) {
+    nav div.collapse{
+        text-align: center;
+        line-height: 50px;
+    }
+    
+}
+                        /* fin du nav */
+                        /* debut footer */
+
+footer section a i{
+    color: #ff5733;
+} 
+                        /* fin footer */
+.dark-mode{
+    background-color: #161616;
+    color: #fff;
+}
+    
